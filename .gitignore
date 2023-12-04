@@ -1,0 +1,4 @@
+build/
+aoc
+input*.txt
+.vscode/settings.json
