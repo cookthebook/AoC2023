@@ -38,6 +38,13 @@ int main(int argc, char **argv)
             result = day_01(fd);
         }
         break;
+    case 2:
+        if (is_star) {
+            result = day_02_star(fd);
+        } else {
+            result = day_02(fd);
+        }
+        break;
     default:
         result = strdup("Unknown");
         break;

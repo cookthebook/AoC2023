@@ -38,6 +38,7 @@ day_01(FILE *fd)
         int val = line_to_number(line);
         sum += val;
         printf("%d\n", val);
+        free(line);
     }
 
     retlen = snprintf(NULL, 0, "%d", sum);
@@ -59,6 +60,7 @@ day_01_star(FILE *fd)
         int val = line_to_number_text(line);
         sum += val;
         printf("%d\n", val);
+        free(line);
     }
 
     retlen = snprintf(NULL, 0, "%d", sum);
